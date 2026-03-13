@@ -9,6 +9,8 @@
     "build-only": "vite build",
     "build:web": "vite build --outDir ../Toonflow-app/scripts/web --emptyOutDir",
     "type-check": "vue-tsc --build --force",
+    "check:text": "node scripts/check-text-integrity.mjs",
+    "lint:text": "npm run check:text",
     "lint:eslint": "eslint . --fix",
     "lint": "run-s lint:*",
     "format": "prettier --write src/",
