@@ -1,0 +1,8 @@
+{
+  "name": "model-zindex",
+  "version": "1.59.0-alpha-1771104257000",
+  "timestamp": 1773381974057,
+  "socketPath": "\\\\.\\pipe\\e526e55eeb438b7b-model-zindex.sock",
+  "cli": {},
+  "userDataDirPrefix": "E:\\project\\Toonflow-web\\.localappdata\\ms-playwright\\daemon\\e526e55eeb438b7b\\ud-model-zindex"
+}

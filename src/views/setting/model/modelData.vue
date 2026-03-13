@@ -134,7 +134,8 @@
                   </a-tooltip>
                   <a-popconfirm
                     title="确定要删除此模型吗？"
-                    style="z-index: 99999999999999999999"
+                    :z-index="3000"
+                    :get-popup-container="() => document.body"
                     ok-text="确定"
                     cancel-text="取消"
                     @confirm="delModelBtn(row)">
