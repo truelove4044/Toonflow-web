@@ -135,7 +135,7 @@
                   <a-popconfirm
                     title="确定要删除此模型吗？"
                     :z-index="3000"
-                    :get-popup-container="() => document.body"
+                    :get-popup-container="getPopupContainer"
                     ok-text="确定"
                     cancel-text="取消"
                     @confirm="delModelBtn(row)">
@@ -249,6 +249,7 @@ const props = defineProps({
     default: "text",
   },
 });
+const getPopupContainer = (node?: HTMLElement) => node?.ownerDocument?.body ?? globalThis.document?.body ?? document.body;
 interface ModelType {
   id: number;
   model: string;
